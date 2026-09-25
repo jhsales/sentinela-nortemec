@@ -8,7 +8,32 @@
 ---
 
 ## 1. Introdução
-Este relatório documenta a suíte de testes automatizados desenvolvida externamente para o sistema preditivo **Sentinela** (Nortemec). Seguindo as diretrizes da Trilha 1 (ML clássico), o pacote oficial não foi modificado; em vez disso, foram implementados testes para auditar contratos de dados, integridade do pipeline, métricas estatísticas e robustez adversarial, expondo falhas estruturais reais da aplicação e tanto que nesses testes eu fiz um fork do github que foi passado para ser seguido e as métricas do trabalho a ser feito abaixo.
+Este relatório documenta a suíte de testes automatizados desenvolvida externamente para o sistema preditivo **Sentinela** (Nortemec). Seguindo as diretrizes da Trilha 1 (ML clássico), o pacote oficial não foi modificado; em vez disso, foram implementados testes para auditar contratos de dados, integridade do pipeline, métricas estatísticas e robustez adversarial, expondo falhas estruturais reais da aplicação e tanto que nesses testes eu fiz um fork do github que foi passado para ser seguido e as métricas do trabalho a ser feito abaixo inciando pelo guia de execução do suite
+
+# Guia de Execução da Suíte de Testes — Sentinela
+
+## Pré-requisitos
+1. Python 3.10 ou superior instalado.
+2. Recomenda-se a criação de um ambiente virtual:
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # No Windows: venv\Scripts\Activate
+   ```
+
+Instalação das dependências necessárias:
+
+```bash
+pip install pytest pandas numpy
+```
+Como Executar
+Na raiz do repositório, execute a suíte completa:
+````bash
+python -m pytest -v
+````
+Para rodar os testes avançados dos Blocos B e C exibindo os logs numéricos detalhados no console:
+````bash
+python -m pytest tests/test_avancado_bc.py -v -s
+````
 
 segue abaixo a tabale de linha de base que foi gerada nos testes executado no visual Studio
 ### Tabela de Linha de Base (Baseline)
