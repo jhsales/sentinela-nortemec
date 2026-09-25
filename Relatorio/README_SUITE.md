@@ -35,7 +35,8 @@ Para rodar os testes avançados dos Blocos B e C exibindo os logs numéricos det
 python -m pytest tests/test_avancado_bc.py -v -s
 ````
 
-segue abaixo a tabale de linha de base que foi gerada nos testes executado no visual Studio
+quando rodei o pytest obtive a seguinte tabela abaixo nos terminal do vs code
+
 ### Tabela de Linha de Base (Baseline)
 
 | Conjunto | Versão | Acurácia | Precisão | Recall | F1-Score |
