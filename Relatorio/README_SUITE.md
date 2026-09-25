@@ -11,15 +11,16 @@
 Este relatório documenta a suíte de testes automatizados desenvolvida externamente para o sistema preditivo **Sentinela** (Nortemec). Seguindo as diretrizes da Trilha 1 (ML clássico), o pacote oficial não foi modificado; em vez disso, foram implementados testes para auditar contratos de dados, integridade do pipeline, métricas estatísticas e robustez adversarial, expondo falhas estruturais reais da aplicação e tanto que nesses testes eu fiz um fork do github que foi passado para ser seguido e as métricas do trabalho a ser feito abaixo.
 
 segue abaixo a tabale de linha de base que foi gerada nos testes executado no visual Studio
--- TABELA DE LINHA DE BASE ---
-conjunto versao  acuracia  precisao   recall       f1
-  treino     v1  0.919583  0.589908 0.994843 0.740641
-  treino     v2  0.985714  0.974846 0.899433 0.935622
-   teste     v1  0.885952  0.583176 0.941985 0.720374
-   teste     v2  0.920714  0.716398 0.813740 0.761973
-producao     v1  0.858095  0.501281 0.979967 0.663277
-producao     v2  0.865952  0.518595 0.838063 0.640715
+### Tabela de Linha de Base (Baseline)
 
+| Conjunto | Versão | Acurácia | Precisão | Recall | F1-Score |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| **Treino** | v1 | 91.96% | 58.99% | 99.48% | 74.06% |
+| **Treino** | v2 | 98.57% | 97.48% | 89.94% | 93.56% |
+| **Teste** | v1 | 88.60% | 58.32% | 94.20% | 72.04% |
+| **Teste** | v2 | 92.07% | 71.64% | 81.37% | 76.20% |
+| **Produção** | v1 | 85.81% | 50.13% | 98.00% | 66.33% |
+| **Produção** | v2 | 86.60% | 51.86% | 83.81% | 64.07% |
 ---
 
 ## 2. Bloco A — Testes Unitários do Pipeline e Contratos de Dados
