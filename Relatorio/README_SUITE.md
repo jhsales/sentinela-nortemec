@@ -1,4 +1,4 @@
-``markdown
+```markdown
 # Relatório Técnico: Avaliação e Testes Automatizados do Sistema Sentinela
 **Curso:** Pós-Graduação em IA e MLOps — IEC PUC Minas  
 **Aluno:** Jorge Henrique  
