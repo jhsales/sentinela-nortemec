@@ -8,7 +8,22 @@
 ---
 
 ## 1. Introdução
-Este relatório documenta a suíte de testes automatizados desenvolvida externamente para o sistema preditivo **Sentinela** (Nortemec). Seguindo as diretrizes da Trilha 1 (ML clássico), o pacote oficial não foi modificado; em vez disso, foram implementados testes para auditar contratos de dados, integridade do pipeline, métricas estatísticas e robustez adversarial, expondo falhas estruturais reais da aplicação e tanto que nesses testes eu fiz um fork do github que foi passado para ser seguido e as métricas do trabalho a ser feito abaixo inciando pelo guia de execução do suite
+Este relatório documenta a suíte de testes automatizados desenvolvida externamente para o sistema preditivo **Sentinela** (Nortemec). Seguindo as diretrizes da Trilha 1 (ML clássico), o pacote oficial não foi modificado; em vez disso, foram implementados testes para auditar contratos de dados, integridade do pipeline, métricas estatísticas e robustez adversarial, expondo falhas estruturais reais da aplicação e tanto que nesses testes eu fiz um fork do github que foi passado para ser seguido e as métricas do trabalho a ser feito abaixo inciando pelo guia de execução do suite e a estrutura do mesmo mostrando onde esta cada parte dos testes e seus respectivos codigos para os testes 
+
+## 📂 Estrutura da Suíte e Repositório
+
+```text
+sentinela-nortemec/
+├── sentinela/                # Pacote oficial da aplicação (imutável)
+├── tests/
+│   ├── test_preprocessamento.py      # Bloco A: Contratos de dados e limpeza
+│   ├── test_pipeline_comportamento.py # Bloco A: Integridade e ordem do pipeline
+│   └── test_avancado_bc.py           # Blocos B & C: Varredura de limiar e robustez adversarial
+├── Relatorio/
+│   └── README_SUITE.md               # Este manual de instruções
+├── relatorio.md                      # Relatório técnico final com as evidências e causas-raiz
+├── gerar_baseline.py                 # Script utilitário de apoio para métricas
+└── requirements.txt                  # Dependências do projeto
 
 # Guia de Execução da Suíte de Testes — Sentinela
 
